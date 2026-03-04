@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Predictive Maintenance</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+body{
+    background:#0f172a;
+    color:#ffffff;
+}
+header{
+    position:fixed;
+    width:100%;
+    background:rgba(15,23,42,0.95);
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+header h2{
+    color:#38bdf8;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:500;
+}
+nav a:hover{
+    color:#38bdf8;
+}
+section{
+    padding:100px 10%;
+}
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(to right,#0f172a,#1e293b);
+}
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+.hero p{
+    max-width:700px;
+    margin-bottom:30px;
+    font-size:18px;
+    color:#cbd5e1;
+}
+.btn{
+    padding:12px 25px;
+    margin:10px;
+    border:none;
+    border-radius:5px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+.btn-primary{
+    background:#38bdf8;
+    color:#000;
+}
+.btn-primary:hover{
+    background:#0ea5e9;
+}
+.btn-outline{
+    background:transparent;
+    border:2px solid #38bdf8;
+    color:#38bdf8;
+}
+.btn-outline:hover{
+    background:#38bdf8;
+    color:#000;
+}
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:32px;
+}
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:10px;
+    transition:0.3s;
+}
+.card:hover{
+    transform:translateY(-5px);
+    background:#334155;
+}
+.card h3{
+    margin-bottom:15px;
+    color:#38bdf8;
+}
+footer{
+    background:#0f172a;
+    text-align:center;
+    padding:30px;
+    border-top:1px solid #334155;
+}
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border-radius:5px;
+    border:none;
+}
+form button{
+    width:100%;
+}
+@media(max-width:768px){
+    header{
+        padding:15px 20px;
+    }
+    .hero h1{
+        font-size:32px;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h2>PredictAI</h2>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#how">How It Works</a>
+        <a href="#features">Features</a>
+        <a href="#industries">Industries</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>AI-Powered Predictive Maintenance Solutions</h1>
+    <p>Prevent machine breakdowns before they happen using real-time IoT data, advanced AI models, and intelligent failure prediction systems.</p>
+    <div>
+        <button class="btn btn-primary">Request Demo</button>
+        <button class="btn btn-outline">Learn More</button>
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Predictive Maintenance</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Smart Monitoring</h3>
+            <p>Collect real-time sensor data including vibration, temperature, and pressure to monitor equipment health continuously.</p>
+        </div>
+        <div class="card">
+            <h3>AI Analytics</h3>
+            <p>Machine learning models analyze patterns and predict failures before breakdown occurs.</p>
+        </div>
+        <div class="card">
+            <h3>Cost Optimization</h3>
+            <p>Reduce downtime and unnecessary maintenance by taking data-driven decisions.</p>
+        </div>
+    </div>
+</section>
+
+<section id="how">
+    <h2 class="section-title">How It Works</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>1. Data Collection</h3>
+            <p>IoT sensors capture equipment data in real-time.</p>
+        </div>
+        <div class="card">
+            <h3>2. Data Processing</h3>
+            <p>Cloud systems clean and process large volumes of machine data.</p>
+        </div>
+        <div class="card">
+            <h3>3. AI Prediction</h3>
+            <p>Advanced algorithms predict failures and remaining useful life.</p>
+        </div>
+        <div class="card">
+            <h3>4. Smart Alerts</h3>
+            <p>Automated alerts notify maintenance teams before breakdown.</p>
+        </div>
+    </div>
+</section>
+
+<section id="features">
+    <h2 class="section-title">Core Features</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Real-Time Monitoring</h3>
+            <p>Live tracking of equipment performance.</p>
+        </div>
+        <div class="card">
+            <h3>Failure Prediction</h3>
+            <p>Accurate prediction using AI models.</p>
+        </div>
+        <div class="card">
+            <h3>Remaining Useful Life (RUL)</h3>
+            <p>Estimate how long machinery can operate safely.</p>
+        </div>
+        <div class="card">
+            <h3>Anomaly Detection</h3>
+            <p>Detect abnormal behavior instantly.</p>
+        </div>
+    </div>
+</section>
+
+<section id="industries">
+    <h2 class="section-title">Industries We Serve</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Manufacturing</h3>
+            <p>Minimize production downtime and increase efficiency.</p>
+        </div>
+        <div class="card">
+            <h3>Automotive</h3>
+            <p>Predict engine and mechanical failures early.</p>
+        </div>
+        <div class="card">
+            <h3>Aviation</h3>
+            <p>Enhance safety with predictive engine monitoring.</p>
+        </div>
+        <div class="card">
+            <h3>Energy & Power</h3>
+            <p>Prevent turbine and generator failures.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button class="btn btn-primary" type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 PredictAI. All Rights Reserved.</p>
+</footer>
+
+<script>
+document.querySelector("form").addEventListener("submit", function(e){
+    e.preventDefault();
+    alert("Thank you! Our team will contact you soon.");
+});
+</script>
+
+</body>
+</html>
